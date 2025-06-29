@@ -113,4 +113,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 页面加载时加载翻译
     loadTranslations();
-});
