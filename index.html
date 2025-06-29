@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="iKFnIxPvzF7n7e_NS-Yu9X-NfOSt6KLBfh4fRtkj0R4" />
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="ho+YozUH/UlPhc9krsESdw" async></script>
+    <title>腾龙娱乐 - 官方在线娱乐平台</title>
+    <meta name="description" content="腾龙娱乐官方平台 ，提供各种精彩的在线娱乐游戏，例如体育博彩、真人娱乐、电子游戏等。安全可靠，立即加入！">
+<!-- 字体样式：仅保留必要字体 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+    :root {
+        --primary-color: #ff3333;
+        --dark-bg: #333;
+        --spacing: 15px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: var(--dark-bg );
+        color: white;
+        padding: 20px;
+        position: relative;
+        display: flex; /* 使用 flexbox */
+        flex-wrap: wrap; /* 允许换行 */
+        justify-content: space-between; /* 左右分布 */
+        align-items: center; /* 垂直居中 */
+    }
+
+    header h1 {
+        font-size: 2.2em;
+        text-align: center;
+        margin-bottom: 0; /* 移除标题底部边距 */
+        flex-grow: 1; /* 允许标题占据可用空间 */
+    }
+
+    /* 导航样式调整 */
+    nav {
+        display: flex; /* 添加弹性布局 */
+        justify-content: space-between; /* 左右分布 */
+        align-items: center; /* 垂直居中 */
+        margin-top: 15px; /* 调整与标题间距 */
+        width: 100%; /* 导航占据整行 */
+    }
+
+    .mobile-menu {
+        position: static; /* 移除绝对定位 */
+        margin-left: auto; /* 靠右显示 */
+        font-size: 1.6em; /* 适当缩小图标尺寸 */
+        color: white;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .mobile-nav {
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        background-color: var(--dark-bg);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        display: none;
+        width: 100%; /* 确保移动导航占据全宽 */
+    }
+
+    .mobile-nav.active {
+        display: flex;
+    }
+
+    .mobile-nav li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.1em;
+        transition: all 0.3s ease;
+    }
+
+    /* 语言选择器样式 */
+    .language-selector {
+        position: relative;
+        margin-left: 20px; /* 与导航菜单保持距离 */
+        z-index: 100; /* 确保在其他元素之上 */
+    }
+
+    .language-selector select {
+        background-color: var(--dark-bg);
+        color: white;
+        border: 1px solid white;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        appearance: none; /* 移除默认下拉箭头 */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20512%22%3E%3Cpath%20fill%3D%22white%22%20d%3D%22M192%20256L64%20128v256z%22%2F%3E%3C%2Fsvg%3E' ); /* 自定义下拉箭头 */
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+        background-size: 12px;
+        padding-right: 30px; /* 为箭头留出空间 */
+    }
+
+    .language-selector select:focus {
+        outline: 3px solid #ff6b6b;
+        outline-offset: 2px;
+        box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
+    }
+
+    /* 响应式导航 */
+    @media (min-width: 769px) {
+        .mobile-menu {
+            display: none;
+        }
+        nav {
+            width: auto; /* 大屏幕下导航宽度自适应 */
+            margin-top: 0;
+        }
+        .mobile-nav {
+            display: flex !important;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 0; /* 大屏导航项垂直居中 */
+            background-color: transparent;
+            position: static;
+            flex-direction: row; /* 大屏幕下横向排列 */
+        }
+        header {
+            justify-content: space-between; /* 标题和导航左右分布 */
+        }
+        header h1 {
+            flex-grow: 0; /* 标题不占据额外空间 */
+        }
+        .language-selector {
+            margin-left: 0; /* 大屏幕下语言选择器靠右 */
+        }
+    }
+
+    /* 英雄区域 */
+    .hero {
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+
+    .hero video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+        loading: lazy;
+    }
+
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 30px 40px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 600px;
+    }
+
+    /* 按钮样式 */
+    .feedback-button {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        border: 2px solid transparent;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    .feedback-button:hover {
+        background-color: #e62e2e;
+        border-color: white;
+        transform: translateY(-3px);
+    }
+
+    /* 内容板块 */
+    .section {
+        max-width: 1000px;
+        margin: 0 auto 50px;
+        padding: 30px;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .section h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .games-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .game-item {
+        padding: 25px;
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .game-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        loading: lazy;
+    }
+
+    /* 页脚 */
+    footer {
+        background-color: var(--dark-bg);
+        color: white;
+        padding: 20px;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .footer-bottom {
+        font-size: 0.9em;
+        color: #ddd;
+        text-align: center;
+    }
+
+    /* 返回顶部按钮 */
+    .back-to-top {
+        position: fixed;
+        bottom: 600px;
+        right: 20px;
+        background-color: var(--dark-bg);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 5px;
+        display: none;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    /* 焦点样式 */
+    a:focus, button:focus {
+        outline: 3px solid #ff6b6b;
+        outline-offset: 2px;
+        box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
+    }
+</style>
+</head>
+<body>
+    <header id="top">
+        <h1>腾龙娱乐</h1>
+        <nav>
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <label for="menu-toggle" class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="mobile-nav">
+                <li><a href="#about" data-lang-key="about-us">关于腾龙</a></li>
+                <li><a href="http://www.itl1001.com" rel="noopener noreferrer" target="_blank" data-lang-key="login-a">登陆入口A</a></li>
+                <li><a href="http://ad.itl0099.com" rel="noopener noreferrer" target="_blank" data-lang-key="agent-portal">官方代理入口</a></li>
+                <li><a href="http://www.itl1002.com" rel="noopener noreferrer" target="_blank" data-lang-key="login-b">登陆入口B</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <select id="language-switcher">
+                <option value="zh-CN" selected>简体中文</option>
+                <option value="en">English</option>
+                <option value="th">ไทย</option>
+                <!-- 您可以根据需要添加更多语言 -->
+            </select>
+        </div>
+    </header>
+
+<div class="hero">
+    <video autoplay loop muted class="hero-video" loading="lazy">
+        <source src="videos/72A2645BED93A8C08EB1AD12DDF35C99.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+        <h2 data-lang-key="hero-title">开启您的娱乐之旅</h2>
+        <p data-lang-key="hero-subtitle">在这里体验前所未有的刺激和精彩！</p>
+        <a href="mailto:shixinqiangx@gmail.com" class="feedback-button" data-lang-key="feedback-button">
+            提交反馈 <i class="fas fa-paper-plane"></i>
+        </a>
+    </div>
+</div>
+
+<section class="section" id="about">
+    <h2 data-lang-key="about-title">关于腾龙</h2>
+    <p data-lang-key="about-content">我们致力于提供最好的在线娱乐体验 ，包括各种精彩的体育博彩、真人娱乐和电子游戏。我们拥有安全可靠的平台，并提供24/7的客户服务。腾龙娱乐拥有多年的行业经验，致力于为玩家打造一个公平、公正、安全的游戏环境。我们提供多种便捷的支付方式，并定期推出各种优惠活动。立即加入，开启您的娱乐之旅！</p>
+</section>
+
+<section class="section games-section">
+    <h2 data-lang-key="games-title">热门游戏推荐</h2>
+    <div class="game-item">
+        <img src="videos/mmexprt1727353400499.jpg" alt="体育博彩" loading="lazy">
+        <h3 data-lang-key="sports-betting-title">体育博彩</h3>
+        <p data-lang-key="sports-betting-desc">实时赛事直播，多种玩法任选，体验竞技激情！</p>
+    </div>
+    <div class="game-item">
+        <img src="videos/photo_2024-10-03_15-52-44.jpg" alt="真人娱乐" loading="lazy">
+        <h3 data-lang-key="live-casino-title">真人娱乐</h3>
+        <p data-lang-key="live-casino-desc">高清直播互动，真实荷官在线，还原赌场体验！</p>
+    </div>
+    <div class="game-item">
+        <img src="videos/photo_2024-10-03_14-24-59.jpg" alt="电子游戏" loading="lazy">
+        <h3 data-lang-key="electronic-games-title">电子游戏</h3>
+        <p data-lang-key="electronic-games-desc">海量精品游戏，创新玩法不断，挑战丰厚奖励！</p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-links">
+        <a href="#" data-lang-key="privacy-policy">隐私政策</a>
+        <a href="#" data-lang-key="terms-of-use">使用条款</a>
+        <a href="#" data-lang-key="customer-service">客服中心</a>
+    </div>
+    <div class="footer-bottom">
+        <p data-lang-key="copyright">© 2025 腾龙娱乐. 版权所有.</p>
+    </div>
+</footer>
+
+<a href="#top" class="back-to-top">↑ 返回顶部</a>
+
+<script>
+    // 导航菜单交互
+    const menuToggle = document.querySelector('.mobile-menu');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    menuToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
+    });
+
+    menuToggle.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            mobileNav.classList.toggle('active');
+        }
+    });
+
+    // 返回顶部按钮
+    window.addEventListener('scroll', () => {
+        const btn = document.querySelector('.back-to-top');
+        btn.style.display = window.pageYOffset > 300 ? 'block' : 'none';
+    });
+
+    // 多语言功能
+    const languageSwitcher = document.getElementById('language-switcher');
+
+    // 存储翻译文本的对象
+    const translations = {
+        'zh-CN': {
+            'about-us': '关于腾龙',
+            'login-a': '登陆入口A',
+            'agent-portal': '官方代理入口',
+            'login-b': '登陆入口B',
+            'hero-title': '开启您的娱乐之旅',
+            'hero-subtitle': '在这里体验前所未有的刺激和精彩！',
+            'feedback-button': '提交反馈',
+            'about-title': '关于腾龙',
+            'about-content': '我们致力于提供最好的在线娱乐体验，包括各种精彩的体育博彩、真人娱乐和电子游戏。我们拥有安全可靠的平台，并提供24/7的客户服务。腾龙娱乐拥有多年的行业经验，致力于为玩家打造一个公平、公正、安全的游戏环境。我们提供多种便捷的支付方式，并定期推出各种优惠活动。立即加入，开启您的娱乐之旅！',
+            'games-title': '热门游戏推荐',
+            'sports-betting-title': '体育博彩',
+            'sports-betting-desc': '实时赛事直播，多种玩法任选，体验竞技激情！',
+            'live-casino-title': '真人娱乐',
+            'live-casino-desc': '高清直播互动，真实荷官在线，还原赌场体验！',
+            'electronic-games-title': '电子游戏',
+            'electronic-games-desc': '海量精品游戏，创新玩法不断，挑战丰厚奖励！',
+            'privacy-policy': '隐私政策',
+            'terms-of-use': '使用条款',
+            'customer-service': '客服中心',
+            'copyright': '© 2025 腾龙娱乐. 版权所有.'
+        },
+        'en': {
+            'about-us': 'About Tenglong',
+            'login-a': 'Login Portal A',
+            'agent-portal': 'Official Agent Portal',
+            'login-b': 'Login Portal B',
+            'hero-title': 'Start Your Entertainment Journey',
+            'hero-subtitle': 'Experience unprecedented excitement and thrill here!',
+            'feedback-button': 'Submit Feedback',
+            'about-title': 'About Tenglong',
+            'about-content': 'We are committed to providing the best online entertainment experience, including various exciting sports betting, live casino, and electronic games. We have a safe and reliable platform and provide 24/7 customer service. Tenglong Entertainment has many years of industry experience and is committed to creating a fair, just, and secure gaming environment for players. We offer a variety of convenient payment methods and regularly launch various promotional activities. Join now and start your entertainment journey!',
+            'games-title': 'Popular Game Recommendations',
+            'sports-betting-title': 'Sports Betting',
+            'sports-betting-desc': 'Live event streaming, multiple ways to play, experience the thrill of competition!',
+            'live-casino-title': 'Live Casino',
+            'live-casino-desc': 'High-definition live interaction, real dealers online, recreating the casino experience!',
+            'electronic-games-title': 'Electronic Games',
+            'electronic-games-desc': 'Massive selection of quality games, constantly innovating gameplay, challenge for generous rewards!',
+            'privacy-policy': 'Privacy Policy',
+            'terms-of-use': 'Terms of Use',
+            'customer-service': 'Customer Service',
+            'copyright': '© 2025 Tenglong Entertainment. All Rights Reserved.'
+        },
+        'th': {
+            'about-us': 'เกี่ยวกับเทงหลง',
+            'login-a': 'ทางเข้าสู่ระบบ A',
+            'agent-portal': 'พอร์ทัลตัวแทนอย่างเป็นทางการ',
+            'login-b': 'ทางเข้าสู่ระบบ B',
+            'hero-title': 'เริ่มต้นการเดินทางแห่งความบันเทิงของคุณ',
+            'hero-subtitle': 'สัมผัสความตื่นเต้นและความเร้าใจที่ไม่เคยมีมาก่อนที่นี่!',
+            'feedback-button': 'ส่งข้อเสนอแนะ',
+            'about-title': 'เกี่ยวกับเทงหลง',
+            'about-content': 'เรามุ่งมั่นที่จะมอบประสบการณ์ความบันเทิงออนไลน์ที่ดีที่สุด รวมถึงการเดิมพันกีฬาที่น่าตื่นเต้น คาสิโนสด และเกมอิเล็กทรอนิกส์ต่างๆ เรามีแพลตฟอร์มที่ปลอดภัยและเชื่อถือได้ และให้บริการลูกค้าตลอด 24 ชั่วโมงทุกวัน เทงหลงเอ็นเตอร์เทนเมนท์มีประสบการณ์ในอุตสาหกรรมมาหลายปี และมุ่งมั่นที่จะสร้างสภาพแวดล้อมการเล่นเกมที่ยุติธรรม ยุติธรรม และปลอดภัยสำหรับผู้เล่น เรามีวิธีการชำระเงินที่สะดวกสบายหลากหลายรูปแบบ และจัดกิจกรรมส่งเสริมการขายต่างๆ เป็นประจำ เข้าร่วมตอนนี้และเริ่มต้นการเดินทางแห่งความบันเทิงของคุณ!',
+            'games-title': 'เกมยอดนิยมแนะนำ',
+            'sports-betting-title': 'การเดิมพันกีฬา',
+            'sports-betting-desc': 'สตรีมมิ่งการแข่งขันสด รูปแบบการเล่นที่หลากหลาย สัมผัสความตื่นเต้นของการแข่งขัน!',
+            'live-casino-title': 'คาสิโนสด',
+            'live-casino-desc': 'การโต้ตอบสดแบบ HD ดีลเลอร์จริงออนไลน์ สร้างประสบการณ์คาสิโนขึ้นมาใหม่!',
+            'electronic-games-title': 'เกมอิเล็กทรอนิกส์',
+            'electronic-games-desc': 'เกมคุณภาพมากมาย นวัตกรรมการเล่นเกมอย่างต่อเนื่อง ท้าทายเพื่อรับรางวัลมากมาย!',
+            'privacy-policy': 'นโยบายความเป็นส่วนตัว',
+            'terms-of-use': 'ข้อกำหนดการใช้งาน',
+            'customer-service': 'ศูนย์บริการลูกค้า',
+            'copyright': '© 2025 เทงหลงเอ็นเตอร์เทนเมนท์ สงวนลิขสิทธิ์.'
+        }
+    };
+
+    // 应用翻译的函数
+    function applyTranslation(lang) {
+        document.querySelectorAll('[data-lang-key]').forEach(element => {
+            const key = element.getAttribute('data-lang-key');
+            if (translations[lang] && translations[lang][key]) {
+                element.textContent = translations[lang][key];
+            }
+        });
+        // 更新页面语言属性
+        document.documentElement.lang = lang;
+    }
+
+    // 监听语言选择器的变化
+    languageSwitcher.addEventListener('change', (event) => {
+        const selectedLang = event.target.value;
+        applyTranslation(selectedLang);
+        // 可以将选择的语言保存到 localStorage，以便下次访问时记住
+        localStorage.setItem('selectedLanguage', selectedLang);
+    });
+
+    // 页面加载时检查是否有保存的语言设置，并应用
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedLang = localStorage.getItem('selectedLanguage');
+        if (savedLang && translations[savedLang]) {
+            languageSwitcher.value = savedLang;
+            applyTranslation(savedLang);
+        } else {
+            // 如果没有保存的语言，默认使用中文
+            applyTranslation('zh-CN');
+        }
+    });
+</script>
+</body>
+</html>
