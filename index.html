@@ -17,28 +17,61 @@
 <body>
     <header id="top">
         <h1 data-lang-key="site-title">腾龙娱乐</h1>
-        <nav>
+        <div class="header-right">
+            <div class="language-selector-icon" id="language-selector-icon" aria-label="Select Language">
+                <i class="fas fa-globe"></i> <!-- 地球图标 -->
+            </div>
             <input type="checkbox" id="menu-toggle" class="sr-only">
             <label for="menu-toggle" class="mobile-menu" aria-label="Toggle navigation menu">
                 <i class="fas fa-bars"></i>
             </label>
-            <ul class="mobile-nav">
-                <li><a href="#about" data-lang-key="about-us">关于腾龙</a></li>
-                <li><a href="http://www.itl1001.com" rel="noopener noreferrer" target="_blank" data-lang-key="login-a">登陆入口A</a></li>
-                <li><a href="http://ad.itl0099.com" rel="noopener noreferrer" target="_blank" data-lang-key="agent-portal">官方代理入口</a></li>
-                <li><a href="http://www.itl1002.com" rel="noopener noreferrer" target="_blank" data-lang-key="login-b">登陆入口B</a></li>
-            </ul>
-        </nav>
-        <div class="language-selector">
-            <label for="language-switcher" class="sr-only">Select Language</label>
-            <select id="language-switcher" aria-controls="content">
+        </div>
+    </header>
+
+    <!-- 侧边抽屉菜单 (Mobile Only ) -->
+    <aside class="sidebar-nav" id="sidebar-nav">
+        <div class="sidebar-header">
+            <h2 data-lang-key="menu-title">菜单</h2>
+            <button class="close-sidebar" id="close-sidebar" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="#about" data-lang-key="about-us">关于腾龙</a></li>
+            <li><a href="http://www.itl1001.com" rel="noopener noreferrer" target="_blank" data-lang-key="login-a">登陆入口A</a></li>
+            <li><a href="http://ad.itl0099.com" rel="noopener noreferrer" target="_blank" data-lang-key="agent-portal">官方代理入口</a></li>
+            <li><a href="http://www.itl1002.com" rel="noopener noreferrer" target="_blank" data-lang-key="login-b">登陆入口B</a></li>
+        </ul>
+        <div class="sidebar-language-selector">
+            <label for="sidebar-language-switcher" class="sr-only">Select Language</label>
+            <select id="sidebar-language-switcher" aria-controls="content">
                 <option value="zh-CN" selected>简体中文</option>
                 <option value="en">English</option>
                 <option value="th">ไทย</option>
                 <!-- 您可以根据需要添加更多语言 -->
             </select>
         </div>
-    </header>
+    </aside>
+    <div class="overlay" id="overlay"></div> <!-- 遮罩层 -->
+
+    <!-- 桌面端导航 (Mobile Hidden ) -->
+    <nav class="desktop-nav">
+        <ul class="desktop-nav-links">
+            <li><a href="#about" data-lang-key="about-us">关于腾龙</a></li>
+            <li><a href="http://www.itl1001.com" rel="noopener noreferrer" target="_blank" data-lang-key="login-a">登陆入口A</a></li>
+            <li><a href="http://ad.itl0099.com" rel="noopener noreferrer" target="_blank" data-lang-key="agent-portal">官方代理入口</a></li>
+            <li><a href="http://www.itl1002.com" rel="noopener noreferrer" target="_blank" data-lang-key="login-b">登陆入口B</a></li>
+        </ul>
+        <div class="language-selector desktop-language-selector">
+            <label for="desktop-language-switcher" class="sr-only">Select Language</label>
+            <select id="desktop-language-switcher" aria-controls="content">
+                <option value="zh-CN" selected>简体中文</option>
+                <option value="en">English</option>
+                <option value="th">ไทย</option>
+                <!-- 您可以根据需要添加更多语言 -->
+            </select>
+        </div>
+    </nav>
 
     <main id="content">
         <section class="hero">
@@ -55,14 +88,14 @@
             </div>
         </section>
 
-        <section class="section" id="about">
+        <section class="section card-section" id="about">
             <h2 data-lang-key="about-title">关于腾龙</h2>
             <p data-lang-key="about-content">我们致力于提供最好的在线娱乐体验 ，包括各种精彩的体育博彩、真人娱乐和电子游戏。我们拥有安全可靠的平台，并提供24/7的客户服务。腾龙娱乐拥有多年的行业经验，致力于为玩家打造一个公平、公正、安全的游戏环境。我们提供多种便捷的支付方式，并定期推出各种优惠活动。立即加入，开启您的娱乐之旅！</p>
         </section>
 
-        <section class="section games-section">
+        <section class="section games-section card-section">
             <h2 data-lang-key="games-title">热门游戏推荐</h2>
-            <div class="games-grid"> <!-- 新增一个容器用于网格布局 -->
+            <div class="games-grid">
                 <div class="game-item">
                     <img src="videos/mmexprt1727353400499.jpg" alt="体育博彩" loading="lazy">
                     <h3 data-lang-key="sports-betting-title">体育博彩</h3>
