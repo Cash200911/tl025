@@ -18,7 +18,7 @@
     <header id="top">
         <h1 data-lang-key="site-title">腾龙娱乐</h1>
         <nav>
-            <input type="checkbox" id="menu-toggle" class="sr-only"> <!-- sr-only for screen readers -->
+            <input type="checkbox" id="menu-toggle" class="sr-only">
             <label for="menu-toggle" class="mobile-menu" aria-label="Toggle navigation menu">
                 <i class="fas fa-bars"></i>
             </label>
@@ -62,20 +62,22 @@
 
         <section class="section games-section">
             <h2 data-lang-key="games-title">热门游戏推荐</h2>
-            <div class="game-item">
-                <img src="videos/mmexprt1727353400499.jpg" alt="体育博彩" loading="lazy">
-                <h3 data-lang-key="sports-betting-title">体育博彩</h3>
-                <p data-lang-key="sports-betting-desc">实时赛事直播，多种玩法任选，体验竞技激情！</p>
-            </div>
-            <div class="game-item">
-                <img src="videos/photo_2024-10-03_15-52-44.jpg" alt="真人娱乐" loading="lazy">
-                <h3 data-lang-key="live-casino-title">真人娱乐</h3>
-                <p data-lang-key="live-casino-desc">高清直播互动，真实荷官在线，还原赌场体验！</p>
-            </div>
-            <div class="game-item">
-                <img src="videos/photo_2024-10-03_14-24-59.jpg" alt="电子游戏" loading="lazy">
-                <h3 data-lang-key="electronic-games-title">电子游戏</h3>
-                <p data-lang-key="electronic-games-desc">海量精品游戏，创新玩法不断，挑战丰厚奖励！</p>
+            <div class="games-grid"> <!-- 新增一个容器用于网格布局 -->
+                <div class="game-item">
+                    <img src="videos/mmexprt1727353400499.jpg" alt="体育博彩" loading="lazy">
+                    <h3 data-lang-key="sports-betting-title">体育博彩</h3>
+                    <p data-lang-key="sports-betting-desc">实时赛事直播，多种玩法任选，体验竞技激情！</p>
+                </div>
+                <div class="game-item">
+                    <img src="videos/photo_2024-10-03_15-52-44.jpg" alt="真人娱乐" loading="lazy">
+                    <h3 data-lang-key="live-casino-title">真人娱乐</h3>
+                    <p data-lang-key="live-casino-desc">高清直播互动，真实荷官在线，还原赌场体验！</p>
+                </div>
+                <div class="game-item">
+                    <img src="videos/photo_2024-10-03_14-24-59.jpg" alt="电子游戏" loading="lazy">
+                    <h3 data-lang-key="electronic-games-title">电子游戏</h3>
+                    <p data-lang-key="electronic-games-desc">海量精品游戏，创新玩法不断，挑战丰厚奖励！</p>
+                </div>
             </div>
         </section>
     </main>
