@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="腾龙娱乐 - 全方位线上娱乐平台，集娱乐、竞技、资讯于一体，支持多语言、多终端访问。">
-  <title>腾龙娱乐官方网站 - 精彩娱乐，一触即发</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="腾龙娱乐 - 精彩游戏，随时随地畅享娱乐体验，支持多语言、多设备访问。">
+  <title>腾龙娱乐 - 专业娱乐平台</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <style>
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: #0f1824;
+      background-color: #121212;
       color: #fff;
+      overflow-x: hidden;
     }
     header {
       background: linear-gradient(90deg, #f39c12, #e67e22);
@@ -19,10 +20,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     header h1 {
+      font-size: 2.5rem;
       margin: 0;
-      font-size: 2.2rem;
     }
     nav a {
       color: white;
@@ -32,22 +34,32 @@
     }
     .hero {
       background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437b3?auto=format&fit=crop&w=1470&q=80') center/cover;
-      height: 400px;
+      height: 500px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
+      position: relative;
+      color: white;
     }
     .hero h2 {
       font-size: 3rem;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 10px 20px;
       border-radius: 8px;
     }
     .hero p {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       margin-top: 10px;
+    }
+    .language-switch {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 5px;
     }
     .section {
       padding: 60px 40px;
@@ -59,97 +71,120 @@
       margin-bottom: 20px;
       color: #f39c12;
     }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 30px;
-    }
-    .feature {
-      background: #1f2a35;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
-    .feature h4 {
-      margin: 0 0 10px;
-      color: #f39c12;
-    }
     .cta {
       background: #f39c12;
+      color: white;
+      padding: 60px 20px;
       text-align: center;
-      padding: 40px 20px;
-      color: #fff;
     }
     .cta a {
       display: inline-block;
-      margin-top: 20px;
       padding: 15px 30px;
       background-color: #fff;
       color: #f39c12;
       font-weight: bold;
       border-radius: 8px;
       text-decoration: none;
+      transition: all 0.3s;
+    }
+    .cta a:hover {
+      background-color: #e67e22;
+      color: #fff;
     }
     footer {
-      background: #0a1118;
+      background: #1e272e;
       text-align: center;
       padding: 20px;
-      font-size: 0.9rem;
-      color: #aaa;
+      color: #bbb;
+    }
+    .cta-form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .cta-form input, .cta-form textarea {
+      width: 300px;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .cta-form button {
+      background-color: #e67e22;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .cta-form button:hover {
+      background-color: #f39c12;
+    }
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .hero h2 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>腾龙娱乐</h1>
-    <nav>
-      <a href="#about">关于我们</a>
-      <a href="#features">平台优势</a>
-      <a href="#contact">联系我们</a>
-    </nav>
-  </header>
 
-  <div class="hero">
-    <h2>精彩娱乐，从这里开始</h2>
-    <p>多平台支持 | 游戏丰富 | 客服在线</p>
+<header>
+  <h1>腾龙娱乐</h1>
+  <nav>
+    <a href="#about">关于我们</a>
+    <a href="#features">平台优势</a>
+    <a href="#contact">联系我们</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>精彩娱乐，从这里开始</h2>
+  <p>多平台支持 | 游戏丰富 | 客服在线</p>
+  <div class="language-switch">
+    <a href="#">中文</a> | <a href="#">English</a>
   </div>
+</div>
 
-  <section class="section" id="about">
-    <h3>关于腾龙娱乐</h3>
-    <p>腾龙娱乐是一个集休闲、竞技、社交于一体的大型线上娱乐平台。我们致力于打造专业、流畅、安全的数字娱乐体验，用户可通过手机、电脑等设备随时随地畅享多样化的游戏项目。</p>
-  </section>
+<section class="section" id="about">
+  <h3>关于腾龙娱乐</h3>
+  <p>腾龙娱乐是一个集休闲、竞技、社交于一体的大型线上娱乐平台。我们致力于打造专业、流畅、安全的数字娱乐体验，用户可通过手机、电脑等设备随时随地畅享多样化的游戏项目。</p>
+</section>
 
-  <section class="section" id="features">
-    <h3>平台优势</h3>
-    <div class="features">
-      <div class="feature">
-        <h4>多终端支持</h4>
-        <p>支持iOS、Android、Windows、Mac等多种设备，真正随时随地玩。</p>
-      </div>
-      <div class="feature">
-        <h4>丰富娱乐项目</h4>
-        <p>涵盖经典游戏、互动娱乐、竞技对战等，满足不同用户的喜好。</p>
-      </div>
-      <div class="feature">
-        <h4>7x24 客服支持</h4>
-        <p>专属客户服务团队全天候在线，提供高效、及时的服务响应。</p>
-      </div>
-      <div class="feature">
-        <h4>流畅体验</h4>
-        <p>服务器部署全球多节点，确保访问流畅，操作无延迟。</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="cta" id="contact">
-    <h3>立即访问腾龙娱乐官网</h3>
-    <p>开启您的高品质线上娱乐之旅</p>
-    <a href="http://www.tl025.cc" target="_blank">进入官网</a>
-    <p style="margin-top:20px; font-size: 0.9em;">客服联系方式：@TL33054 (Telegram)</p>
+<section class="section" id="features">
+  <h3>平台优势</h3>
+  <div>
+    <ul>
+      <li><strong>多终端支持：</strong>支持iOS、Android、Windows、Mac等多种设备，真正随时随地玩。</li>
+      <li><strong>丰富娱乐项目：</strong>涵盖经典游戏、互动娱乐、竞技对战等，满足不同用户的喜好。</li>
+      <li><strong>7x24 客服支持：</strong>专属客户服务团队全天候在线，提供高效、及时的服务响应。</li>
+      <li><strong>流畅体验：</strong>服务器部署全球多节点，确保访问流畅，操作无延迟。</li>
+    </ul>
   </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 腾龙娱乐版权所有 | 技术支持：GitHub Pages</p>
-  </footer>
+<div class="cta" id="contact">
+  <h3>立即访问腾龙娱乐官网</h3>
+  <p>开启您的高品质线上娱乐之旅</p>
+  <a href="http://www.tl025.cc" target="_blank">进入官网</a>
+  <div class="cta-form">
+    <input type="text" placeholder="您的姓名" required>
+    <textarea placeholder="留下您的问题或建议" required></textarea>
+    <button type="submit">提交</button>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 腾龙娱乐版权所有 | 技术支持：GitHub Pages</p>
+</footer>
+
 </body>
 </html>
